@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.products{
+    width: 100%;
+}
+.products__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.product{
+    padding: 10px;
+    text-align: center;
+}
+.product__img{
+    max-width: 100%;
+}
+
+@media (width <= 768px){
+    .products__container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.invisible{
+    display: none;
+    opacity: 0;
+    user-select: none;
+}

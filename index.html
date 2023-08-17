@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">Header</header>
+
+  <section class="products">
+    <div class="products__container">
+
+    </div>
+  </section>
+
+
+  <form action="#" method="post" class="product-order-form">
+
+    <div class="form-group">
+      <label class="product-order-form__label" for="name">Nombre:</label>
+      <input class="product-order-form__input" type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label class="product-order-form__label" for="email">Email:</label>
+      <input class="product-order-form__input" type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label class="product-order-form__label" for="address">Address:</label>
+      <input class="product-order-form__input" type="text" name="address" id="address" required>
+    </div>
+
+    <div class="form-group">
+      <label class="product-order-form__label" for="productName">Product Name:</label>
+      <input class="product-order-form__input" type="text" id="productName" name="productName" required>
+    </div>
+
+    <div class="form-group">
+      <label class="product-order-form__label" for="quantity">Quantity:</label>
+      <input class="product-order-form__input" type="number" id="quantity" name="quantity" required value="1" min="1">
+    </div>
+
+    <div class="form-group">
+      <label class="product-order-form__label" for="instagram">instagram:</label>
+      <input class="product-order-form__input" type="text" id="instagram" name="instagram">
+    </div>
+
+    <input type="text" name="_honey" style="display:none">
+    
+    <button class="product-order-form__button" type="submit">Enviar</button>
+  </form>
+
+  <form target="_blank" action="https://formsubmit.co/casudiba@mailgolem.com" id="formInvisible" method="POST" class="invisible">
+    <input type="text" name="name" id="nameInvisible" class="invisible">
+    <input type="email" name="email" id="emailInvisible" class="invisible">
+    <input type="email" name="message" id="messageInvisible" class="invisible">
+    <input type="text" name="_honey" style="display:none">
+  </form>
+  
+  <footer class="footer">Footer</footer>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</body>
+
+</html>
